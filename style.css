@@ -2,8 +2,11 @@ html {
     height: 100%;
     width: 100%;
   }
-  
-  a {
+header {
+    display: flex;
+    position: fixed
+}
+a {
     color: red;
     font-family: fantasy;
   }
