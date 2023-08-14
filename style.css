@@ -4,7 +4,7 @@ html {
   }
 header {
     display: flex;
-    position: fixed
+    position: fixed;
 }
 a {
     color: red;
