@@ -4,8 +4,10 @@ html {
     background-color:rgb(186, 186, 186);
   }
 header {
+    font-size: medium;
     display: flex;
     position: fixed;
+    top:0
 }
 a {
     color: rgb(0, 255, 64);
