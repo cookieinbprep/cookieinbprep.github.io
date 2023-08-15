@@ -8,6 +8,10 @@ header {
 }
 a {
     color: rgb(0, 212, 81);
-    font-family: fantasy;
-  }
+    font-family: Impact;
+}
 
+p {
+    color: rgb(0, 0, 255);
+    font-family:Impact;
+}
