@@ -11,7 +11,9 @@ a {
     font-family: Impact;
 }
 
-p {
-    color: rgb(0, 0, 255);
+body {
+    color: rgb(0, 141, 197);
     font-family:Impact;
+    background-color: rgb(0, 212, 81)
 }
+
