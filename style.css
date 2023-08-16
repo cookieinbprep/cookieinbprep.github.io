@@ -6,9 +6,7 @@ html {
 header { 
     position: fixed;
     top:0;
-    right:0;
     width:100%
-    padding: 50px;
 }
 a {
     color: rgb(0, 255, 64);
