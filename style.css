@@ -3,8 +3,9 @@ html {
     width: 100%;
     background-color:rgb(186, 186, 186);
   }
-header { 
+#top-header { 
     position: fixed;
+    right:0;
 }
 a {
     color: rgb(0, 255, 64);
