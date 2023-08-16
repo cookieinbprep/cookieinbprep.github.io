@@ -3,7 +3,7 @@ html {
     width: 100%;
     background-color:rgb(186, 186, 186);
   }
-#top-header { 
+header { 
     position: fixed;
 }
 a {
