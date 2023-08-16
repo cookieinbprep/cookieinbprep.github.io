@@ -5,7 +5,10 @@ html {
   }
 header { 
     position: fixed;
-    position:top;
+    top:0;
+    left:0;
+    right:0;
+    width:100%;
 }
 a {
     color: rgb(0, 255, 64);
