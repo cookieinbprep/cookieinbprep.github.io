@@ -5,9 +5,6 @@ html {
   }
 #top-header { 
     position: fixed;
-    top:0;
-    left:0;
-    width:100%
 }
 a {
     color: rgb(0, 255, 64);
