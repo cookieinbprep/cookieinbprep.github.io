@@ -5,6 +5,7 @@ html {
   }
 header { 
     position: fixed;
+    right:0;
 }
 a {
     color: rgb(0, 255, 64);
