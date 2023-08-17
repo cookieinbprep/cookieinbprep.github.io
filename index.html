@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html>
-
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width">
@@ -18,7 +17,7 @@
         </header>
         <section id="home">
             <h1>Home</h1>
-            <p>Welcome to the Game Guide! This is a place where you can find information about games and take a quiz to find out what game you should get next.</p>
+            <p>Welcome to the Game Guide! This is a place where you can find information about popular games and take a quiz to find out what game you should get next.</p>
         </section>
         <section id="info">
             <h1>Information</h1>
@@ -142,11 +141,41 @@
         </section>
         <section id="quiz">
             <h1>Quiz</h1>
-            <h3>Take a quiz to see which game is recommended for you!</h3>
-            <h2>Results</h2>
-            <p>Recommendation : <a href="minecraft.net">Minecraft</a></p>
-            <img src="https://th.bing.com/th/id/OIP.5tds8J2TwVLkCViLfkUJaQHaCl?w=313&h=121&c=7&r=0&o=5&dpr=1.3&pid=1.7"/>
-            <p>Reason : Minecraft is the game recommended based on what you like. It has many different modes such as survival, creative, and adventure as well as an endless amount of minigames you can find on the tons of servers hosted by players.</p>
+            <h4>Take a quiz to see which game is recommended for you!</h4>
+            <div class="quiz-container">
+                <h1>Quiz</h1>
+                <form id="quiz-form">
+                    <div class="question">
+                        <p>What gamemode do you prefer?</p>
+                        <label><input type="radio" name="gamemode" value="Survival">Survival</label>
+                        <label><input type="radio" name="gamemode" value="Creative">Creative</label>
+                        <label><input type="radio" name="gamemode" value="Adventure">Adventure</label>
+                    </div>
+                    <div class="question"> 
+                        <p>Do you enjoy being able to play a variety minigames?/p>
+                        <label><input type="radio" name="enjoy" value="Yes">Yes</label>
+                        <label><input type="radio" name="enjoy" value="No">No</label>
+                    </div>
+                    <div class="question">
+                        <p>What type of playstyle do you enjoy?</p>
+                        <label><input type="radio" name="type" value="Adventure">Adventure</label>
+                        <label><input type="radio" name="type" value="Action">Action</label>
+                        <label><input type="radio" name="type" value="Relaxing">Relaxing</label>
+                        <label><input type="radio" name="type" value="Creative">Creative</label>
+                    </div>
+                    <button type="button" id="submit-button">Submit</button>
+        </form>
+        <div id="result"></div>
+    </div>
+    <script src="script.js"></script>
+            
+            if (answers.gamemode && answers.enjoy && answers.type) {
+                output : <h3>Results</h3>
+                <p>Recommendation : <a href="minecraft.net">Minecraft</a></p>
+                <img src="https://th.bing.com/th/id/OIP.5tds8J2TwVLkCViLfkUJaQHaCl?w=313&h=121&c=7&r=0&o=5&dpr=1.3&pid=1.7"/>
+                <p>Reason : Minecraft is the game recommended based on what you like. It has many different modes such as survival, creative, and adventure as well as an endless amount of minigames you can find on the tons of servers hosted by players.</p>
+            }
+
         </section>
     </body>
 
