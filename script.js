@@ -22,8 +22,8 @@ function display(answers) {
     result.textContent = "Recommendation : Minecraft";
     resultSection.appendChild(result);
     const reason = document.createElement('p');
-    result.textContent = "Reason : Minecraft is the game recommended based on what you like. It has many different modes such as survival, creative, and adventure as well as an endless amount of minigames you can find on the tons of servers hosted by players.";
-
+    reason.textContent = "Reason : Minecraft is the game recommended based on what you like. It has many different modes such as survival, creative, and adventure as well as an endless amount of minigames you can find on the tons of servers hosted by players.";
+    resultSection.appendChild(reason);
 }
 // const questions = [
 //   {
