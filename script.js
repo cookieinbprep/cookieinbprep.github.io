@@ -3,11 +3,6 @@ form.addEventListener("submit", submitted);
 
 function submitted(event) {
     event.preventDefault();
-    const answers = {
-        question1: document.querySelector('input[name="q1"]:checked').value,
-        question2: document.querySelector('input[name="q2"]:checked').value,
-        question3: document.querySelector('input[name="q3"]:checked').value,
-    }
     display(answers);
 }
 
