@@ -3,11 +3,11 @@ form.addEventListener("submit", submitted);
 
 function submitted(event) {
     event.preventDefault();
-    display(answers);
+    display();
 }
 
-function display(answers) {
-    const resultSection = document.getElementById("result");
+function display() {
+    const resultSection = document.getElementById("results");
     resultSection.innerHTML = "";
 
     const resultHeader = document.createElement('h3');
