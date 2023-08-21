@@ -16,3 +16,7 @@ body {
     color: rgb(84, 46, 6);
     font-family:Impact;
 }
+#results img {
+    width:51%;
+    height:auto;
+}
