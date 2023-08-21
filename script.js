@@ -8,10 +8,10 @@ function submitted(event) {
         question2: document.querySelector('input[name="q2"]:checked').value,
         question3: document.querySelector('input[name="q3"]:checked').value,
     }
-    displayResult();
+    display(answers);
 }
 
-function displayResult() {
+function display(answers) {
     const resultSection = document.getElementById("result");
     resultSection.innerHTML = "";
 
