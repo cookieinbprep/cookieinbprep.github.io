@@ -5,8 +5,8 @@ function submitted(event) {
     event.preventDefault();
     const answers = {
         question1: document.querySelector('input[name="q1"]:checked').value,
-        question2: document.querySelector('input[name-"q2"]:checked').value,
-        question3: document.querySelector('input[name-"q3"]:checked').value,
+        question2: document.querySelector('input[name="q2"]:checked').value,
+        question3: document.querySelector('input[name="q3"]:checked').value,
     }
     display(answers);
 }
@@ -15,15 +15,26 @@ function submitted(event) {
 function display(answers) {
     const resultSection = document.getElementById("result");
     resultSection.innerHTML = "";
+
     const resultHeader = document.createElement('h3');
     resultHeader.textContent = "Results";
     resultSection.appendChild(resultHeader);
+
     const result = document.createElement('p');
     result.textContent = "Recommendation : Minecraft";
     resultSection.appendChild(result);
+
     const reason = document.createElement('p');
     reason.textContent = "Reason : Minecraft is the game recommended based on what you like. It has many different modes such as survival, creative, and adventure as well as an endless amount of minigames you can find on the tons of servers hosted by players.";
     resultSection.appendChild(reason);
+
+    const images = document.createElement("div");
+    images.innerHTML = `
+        <img src="https://th.bing.com/th/id/OIP.5tds8J2TwVLkCViLfkUJaQHaCl?w=313&h=121&c=7&r=0&o=5&dpr=1.3&pid=1.7" alt="Minecraft Screenshot 1">
+        <img src="https://i.ytimg.com/vi/Y4dc2M22K6w/maxresdefault.jpg" alt="Minecraft Screenshot 2">
+        <img src="https://wallpapercave.com/wp/wp7075984.png" alt="Minecraft Screenshot 3">
+    `;
+    resultSection.appendChild(images);
 }
 // const questions = [
 //   {
