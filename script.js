@@ -8,11 +8,10 @@ function submitted(event) {
         question2: document.querySelector('input[name="q2"]:checked').value,
         question3: document.querySelector('input[name="q3"]:checked').value,
     }
-    display(answers);
+    displayResult();
 }
 
-
-function display(answers) {
+function displayResult() {
     const resultSection = document.getElementById("result");
     resultSection.innerHTML = "";
 
@@ -27,7 +26,7 @@ function display(answers) {
     const reason = document.createElement('p');
     reason.textContent = "Reason : Minecraft is the game recommended based on what you like. It has many different modes such as survival, creative, and adventure as well as an endless amount of minigames you can find on the tons of servers hosted by players.";
     resultSection.appendChild(reason);
-    
+
 }
 //     const images = document.createElement("div");
 //     images.innerHTML = `
